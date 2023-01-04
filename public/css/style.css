@@ -270,6 +270,7 @@ body{
     .main-header-top-bar, .main-navbar{
         max-width: 1200px;
         margin: auto;
+        gap: 100px;
     }
     .main-header-top-bar{
         align-items: center;
