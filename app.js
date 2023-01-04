@@ -2,11 +2,13 @@ const express =require('express');
 const path = require('path')
 const app = express(); 
 const publicPath = path.resolve(__dirname, './public');
+const port = process.env.PORT || 3000;
+
 
 app.use(express.static(publicPath))
 
-app.listen(3000,()=>{
-    console.log('Server iniciado')
+app.listen(port,()=>{
+    console.log(`Server iniciado en el puerto ${port}`)
 })
 
 app.get('/home', (req, res)=>{
