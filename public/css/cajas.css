@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* mobile first */
+.main-header{
+    background-color: #faebd7;
+    padding: 20px;
+}
+.hamburguer-button{
+    background-color: azure;
+    color: black;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+}
+.text-header{
+    font-weight: 400;
+    text-align: center;
+    font-size: 50px;
+}
+.logo{
+    max-width: 760px;
+    max-height: 200px;
+    display: flex;
+    margin: auto;
+    
+}
+.buscador-header{
+    max-width:300px ;
+    max-height:100px ;
+    border-radius: 30px;
+    display: flex;
+    margin: auto;
+    border: solid;
+    border-color:#635e58 ;
+    background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png) no-repeat 0px 5px;
+    background-size: 24px;
+    padding: 10px 10px 10px 30px;
+}
+.navbar-main{
+    display: none;
+}
+.navbar-main ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar-main a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0 ;
+    font-size: 17px;
+}
+/* tablets */
+@media (min-width: 768px){
+    .top-bar-header{
+        display: flex;
+        justify-content: space-between;
+        max-height: 140px;
+        
+    }
+    .hamburguer-button{
+        display: none;
+    }
+    .logo{
+        margin-left: 0;
+        max-height: 180px;
+        max-width: 250px;
+        display: flex;
+        
+        
+    }
+    .buscador-header{
+        max-width: 500px;
+        display: flex;
+        width: 500px;
+        margin-left: 75px ;
+        
+        
+    }
+    .text-header{
+        text-align: right;
+        max-width: 350px;
+        margin-left: 11px;
+        display: flex;
+    }
+    
+    .navbar-main{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .navbar-main ul {
+        display: flex;
+
+    }
+    .navbar-main li{
+        margin: 0px 15px;
+    }
+}
