@@ -11,7 +11,7 @@ app.listen(port,()=>{
     console.log(`Server iniciado en el puerto ${port}`)
 })
 
-app.get('/home', (req, res)=>{
+app.get('/', (req, res)=>{
     res.sendFile(path.resolve(__dirname, './views/index.html'))
 })
 app.get('/register', (req, res)=>{
