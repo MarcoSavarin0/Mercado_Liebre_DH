@@ -27,10 +27,8 @@
 .box-buttom{
     display: flex;
     justify-content: center;
-    
 }
- button{
-    
+.button-login{
     border: none;
     margin: 4px auto;
     height: 40px;
@@ -39,7 +37,22 @@
     border-radius: 8px;
     border: 1px solid #1259c3;
     padding: 0px 100px;
+    transition: all 250ms;
+}
+.button-login:hover{
+    background-color: #fff;
+    color: #1259c3;
+}
 
-    
-    
+@media (min-width: 768px){
+    .Form-login{
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 1200px){
+    .Form-login{
+        max-width: 70%;
+        margin-top:30px ;
+    }
 }
