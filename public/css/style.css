@@ -45,7 +45,7 @@ body{
 .main-header-top-bar input{
     /* max-width:300px ;
     max-height:100px ; */
-    width: 50%;
+    width: 70%;
     border-radius: 10px;
     display: flex;
     margin: auto;
@@ -174,14 +174,15 @@ body{
 }
 .footer-copy{
     
-    font-size: 15px;
+    font-size: 2em;
+    margin: 10px;
 }
 .footer-sec p{
     color: #716b6c;
     margin-top: 0;
 }
 .footer-sec h4{
-    font-size: 24px;
+    
     margin-bottom: 0px;
     color: #686c75;
     font-style: normal;
@@ -189,7 +190,10 @@ body{
 .footer-sec i{
     display: inline;
     color: #1259c3;
-    font-size: 70px;
+    font-size: 40px;
+}
+.footer-sec i:hover{
+    color: #03264C;
 }
 
 
@@ -197,6 +201,25 @@ body{
 
 
 @media (min-width: 768px){
+    .main-header-top-bar{
+        display: flex;
+        gap: 0 30px;
+    }
+    
+    .form-search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo{
+        width: 30%;
+        justify-content: center;
+    }
+    .main-header-top-bar input{
+        width: 100%;
+    }
+    
     .main-header-top-bar{
         display: flex;
         justify-content: space-between;
